@@ -1,11 +1,11 @@
 const path = require('path')
 module.exports = {
   version: "2.0",
-  title: "StyleTTS",
+  title: "StyleTTS-WebUI",
   description: "",
   icon: "icon.png",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/env")
+    let installed = info.exists("app/venv")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),
