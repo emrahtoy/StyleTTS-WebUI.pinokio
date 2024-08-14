@@ -8,7 +8,10 @@ module.exports = {
     method: "shell.run",
     params: {
       path: "app",
-      message: "git pull"
+      message: [
+        "git pull",
+        "git submodule update --remote --recursive"
+      ]
     }
   }]
 }

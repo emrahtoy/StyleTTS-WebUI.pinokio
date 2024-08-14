@@ -15,7 +15,7 @@ module.exports = {
         path: "app",
         message: [
           "git submodule init",
-          "git submodule update --remote"
+          "git submodule update --remote --recursive"
         ]
       }
     },
@@ -55,7 +55,10 @@ module.exports = {
     {
       method: "fs.download",
       params: {
-        uri: "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/blob/main/Models/LibriTTS/epochs_2nd_00020.pth",
+        uri: [
+          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/blob/main/Models/LibriTTS/epochs_2nd_00020.pth",
+          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/blob/main/Models/LibriTTS/config.yml",
+        ],
         dir: "app/models/pretrain_base_1/"
       }
     },
