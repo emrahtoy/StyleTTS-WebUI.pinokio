@@ -1,0 +1,17 @@
+#####################################################################################################################
+#
+# PHONEMIZER_ESPEAK_PATH
+# - You must provide espeak-ng path otherwise WebUI wont work.
+# - This should be the path ex : C:\Program Files\eSpeak NG\
+#
+#####################################################################################################################
+PHONEMIZER_ESPEAK_PATH=
+
+#####################################################################################################################
+#
+# PHONEMIZER_ESPEAK_LIBRARY
+# - You must provide espeak-ng shared library (.dll or .so file ) path otherwise WebUI wont work.
+# - This should be the path ex : C:\Program Files\eSpeak NG\libespeak-ng.dll
+#
+#####################################################################################################################
+PHONEMIZER_ESPEAK_LIBRARY=

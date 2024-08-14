@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "StyleTTS-WebUI",
-  description: "",
+  description: "Jarod Mica's implementation of StyleTTS WebUI. Do not forget to install espeak-ng from https://github.com/espeak-ng/espeak-ng/releases and set the necessary paths in the configuration tab.",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/venv")

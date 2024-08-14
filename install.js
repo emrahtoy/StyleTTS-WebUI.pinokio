@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/JarodMica/StyleTTS-WebUI app"
+          "git clone https://github.com/emrahtoy/StyleTTS-WebUI app"
         ]
       }
     },
@@ -56,8 +56,8 @@ module.exports = {
       method: "fs.download",
       params: {
         uri: [
-          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/blob/main/Models/LibriTTS/epochs_2nd_00020.pth",
-          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/blob/main/Models/LibriTTS/config.yml",
+          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/resolve/main/Models/LibriTTS/epochs_2nd_00020.pth",
+          "https://huggingface.co/yl4579/StyleTTS2-LibriTTS/resolve/main/Models/LibriTTS/config.yml",
         ],
         dir: "app/models/pretrain_base_1/"
       }

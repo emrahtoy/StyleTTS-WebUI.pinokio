@@ -5,7 +5,10 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "venv",                // Edit this to customize the venv folder path
-        env: { },                   // Edit this to customize environment variables (see documentation)
+        env: { 
+          "PHONEMIZER_ESPEAK_PATH":"{{env.PHONEMIZER_ESPEAK_PATH}}",
+          "PHONEMIZER_ESPEAK_LIBRARY":"{{env.PHONEMIZER_ESPEAK_LIBRARY}}"
+        },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
           "python webui.py",    // Edit with your custom commands
