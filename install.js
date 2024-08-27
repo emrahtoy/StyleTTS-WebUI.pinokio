@@ -31,13 +31,13 @@ module.exports = {
         }
       }
     },
-    {
+    /* {
       method: "fs.copy",
       params: {
         src: "requirements.txt.bak",
         dest: "app/requirements.txt"
       }
-    },
+    }, */
     // Edit this step with your custom install commands
     {
       method: "shell.run",
