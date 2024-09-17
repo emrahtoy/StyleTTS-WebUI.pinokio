@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/emrahtoy/StyleTTS-WebUI app"
+          "git clone https://github.com/JarodMica/StyleTTS-WebUI/ app"
         ]
       }
     },
@@ -31,14 +31,6 @@ module.exports = {
         }
       }
     },
-    /* {
-      method: "fs.copy",
-      params: {
-        src: "requirements.txt.bak",
-        dest: "app/requirements.txt"
-      }
-    }, */
-    // Edit this step with your custom install commands
     {
       method: "shell.run",
       params: {
@@ -47,6 +39,7 @@ module.exports = {
         message: [
           "pip install gradio devicetorch",
           "pip install -r requirements.txt",
+          "pip uninstall -y StyleTTS2",
           "pip install ./modules/StyleTTS2/",
           "python ./modules/StyleTTS2/styletts2/download_punkt.py"
         ]
@@ -61,12 +54,6 @@ module.exports = {
         ],
         dir: "app/models/pretrain_base_1/"
       }
-    },
-    /* {
-      method: "fs.link",
-      params: {
-        venv: "app/venv"
-      }
-    } */
+    }
   ]
 }

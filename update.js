@@ -10,7 +10,11 @@ module.exports = {
       path: "app",
       message: [
         "git pull",
-        "git submodule update --remote --recursive"
+        "git submodule init",
+        "git submodule update --remote --recursive",
+        "pip install -r requirements.txt",
+        "pip uninstall -y StyleTTS2",
+        "pip install ./modules/StyleTTS2"
       ]
     }
   }]
